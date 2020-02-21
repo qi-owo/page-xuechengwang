@@ -1,0 +1,295 @@
+/* 清除元素默认的内外边距 */
+*{
+    padding: 0;
+    margin: 0;
+}
+/* 清除列表样式 */
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/*清除浮动的*/
+.clearfix:before,
+.clearfix:after{
+    content: "";
+    display: table;
+}
+.clearfix:after{
+    clear: both;
+}
+.clearfix{
+    *zoom: 1;
+}
+body{
+   background-color: #f3f5f7; 
+}
+/* 版心1200 水平居中 */
+.w{
+    width: 1200px;
+    margin:auto;
+}
+/* 头部开始 */
+.header{  
+    height: 42px;
+    margin: 30px auto;
+}
+.logo{
+    float: left;
+    margin-right: 60px;
+}
+.nav {
+    float: left;
+}
+.nav ul li{
+    float: left;
+}
+.nav ul li a{
+    font-size: 18px;
+    color: #050505;
+    display: block;
+    padding: 0 10px;
+    line-height: 40px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.nav ul li a:hover{
+    border-bottom: 2px #00a4ff solid;
+}
+.search{
+    float: left;
+    margin-left: 70px;
+}
+.search input{
+    float: left;
+    width: 340px;
+    height: 38px;
+    border: #00a4ff 1px solid;
+    padding-left: 20px;
+    color: #bfbfbf;
+}
+.search button{
+    float: left;
+    border: none;
+    width: 50px;
+    height: 40px;
+    background-image: url(images/search.png);
+    background-repeat: no-repeat;
+ } 
+.denglu{
+    float: left;
+    width: 100px;
+    height: 30px;
+    margin-left: 30px;
+}
+.denglu img{
+    width: 30px;
+    height: 30px;
+}
+.denglu #name{
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 6px;
+}
+
+
+
+.banner{
+    height: 420px;
+    background-color: #1c036c;
+    background-image: url(images/banner.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.subnav{
+    float: left;
+    width: 150px;
+    height: 420px;
+    padding: 0 20px;
+    background: rgba(0,0,0,.3);
+}
+.subnav li{
+    height: 45px;
+    line-height: 45px;
+}
+.subnav li a{
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+}
+.subnav span{
+    float: right;
+}
+.course{
+    width: 228px;
+    height: 300px;
+    background-color: #fff;
+    float: right;   /* 浮动的盒子不会发生上下外边距塌陷*/
+    margin-top: 50px;
+}
+.course-hd{
+    height: 48px;
+    background-color:#9bceea;
+    text-align: center;
+    font-size: 18px;
+    line-height: 48px;
+    color: #fff;
+    font-weight: bold;
+}
+.course-bd{
+    padding: 0 15px; /*没有宽度的盒子不会被撑开*/
+}
+.course-bd ul{
+    padding-top: 10px;
+}
+.course-bd li{
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    margin-top: 10px;
+}
+.course-bd li h4{
+    font-size: 14px;
+    color: #4e4e4e;
+}
+.course-bd li p{
+    color: #a5a5a5;
+    font-size: 12px;
+}
+.all{
+    display: block;
+    text-align: center;
+    height: 38px;
+    border: 1px solid #00a4ff;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #00a4ff;
+    line-height: 38px;
+}
+.all:hover{
+    background-color: #00a4ff;
+    color: #fff;
+}
+
+.goods{
+    background-color: #fff;
+    height: 60px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.2);
+    margin-top: 10px;
+    line-height: 60px;
+}
+.goods h3{
+    float: left;
+    font-size: 16px;
+    color: #00a4ff;
+    margin:0 30px;
+}
+.goods-ct{
+    float: left;
+    color: #bfbfbf;
+}
+.goods-ct a{
+    font-size: 16px;
+    color: #050505;
+    margin: 0 30px;
+}
+.mod{
+    float: right;
+    font-size: 12px;
+    color: #00a4ff;
+    margin-right:20px ;
+}
+
+.box{
+    margin-top: 15px;
+}
+.box-hd{
+    height: 60px;
+    line-height: 60px;
+}
+.box-hd h3{
+    float: left;
+    font-size: 20px;
+    color:#494949;
+    font-weight: normal;  /* normal == 400  表示字体不加粗 */
+}
+.box-hd a{
+    float: right;
+    font-size: 12px;
+    color: #a5a5a5;
+    margin-right: 30px;
+}
+
+.box-bd{
+    width: 1215px;
+}
+.box-bd li{
+    float: left;
+    width: 228px;
+    height: 278px;
+    background-color: #fff;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.2);
+}
+.box-bd li img{
+    width: 100%;
+}
+.box-bd li h4{
+    margin:25px 20px;
+    font-size: 14px;
+    color: #050505;
+    font-weight: 400;
+}
+.box-bd li p{
+    margin:  0 20px;
+    font-size: 12px;
+    color: #999;
+}
+.box-bd li p span{
+    color: #ff7c2d;
+}
+
+.footer{
+    height: 385px;
+    background-color: #fff;
+    padding-top: 30px;
+}
+.copyright{
+    float: left;
+}
+.copyright p{
+    color: #666;
+    font-size: 12px;
+    margin: 20px 0 15px 0;
+}
+.app{
+    display: block;
+    width: 118px;
+    height: 34px;
+    border: #00a4ff 1px solid;
+    line-height: 34px;
+    text-align: center;
+    color: #00a4ff;
+}
+.links{
+    float: right;
+}
+.links dl{
+    float: left;
+    margin-left: 100px;
+}
+.links dt{
+    height: 35px;
+    font-size: 16px;
+    color: #333;
+}
+.links dd{
+    font-size: 12px;
+    color: #333;
+
+}
+.links dd a:hover{
+    color: #00a4ff;
+}
